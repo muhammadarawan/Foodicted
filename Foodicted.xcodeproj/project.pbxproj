@@ -1,0 +1,573 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0CB009871F95323B00DBA8C2 /* SearchResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CB009851F95323B00DBA8C2 /* SearchResultViewController.m */; };
+		0CB009881F95323B00DBA8C2 /* SearchResultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CB009861F95323B00DBA8C2 /* SearchResultViewController.xib */; };
+		0CB0098B1F95369400DBA8C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CB009891F95369400DBA8C2 /* Main.storyboard */; };
+		0CB804971F953C1900AA90E6 /* ListOfRecipies.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CB804961F953C1900AA90E6 /* ListOfRecipies.m */; };
+		0CB8049A1F953C3700AA90E6 /* Recipie.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CB804991F953C3700AA90E6 /* Recipie.m */; };
+		0CC39E331F92AFCA00E916BD /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CC39E2F1F92AFCA00E916BD /* SearchViewController.m */; };
+		0CC39E341F92AFCA00E916BD /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CC39E321F92AFCA00E916BD /* SearchViewController.xib */; };
+		0CC39E371F92AFF800E916BD /* SearchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CC39E361F92AFF800E916BD /* SearchView.m */; };
+		0CC39E551F92B55700E916BD /* SearchApiCall.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CC39E541F92B55700E916BD /* SearchApiCall.m */; };
+		0CC39E581F92BB4700E916BD /* SearchApiHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CC39E571F92BB4700E916BD /* SearchApiHandler.m */; };
+		0CD53B601F8F5C3F00E18CFD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD53B5F1F8F5C3F00E18CFD /* main.m */; };
+		0CD53B6B1F8F5C3F00E18CFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CD53B6A1F8F5C3F00E18CFD /* Assets.xcassets */; };
+		0CD53B6E1F8F5C3F00E18CFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CD53B6C1F8F5C3F00E18CFD /* LaunchScreen.storyboard */; };
+		0CD53B7C1F8F5D3400E18CFD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD53B781F8F5D3400E18CFD /* AppDelegate.m */; };
+		82637EBB05E052C0DB89C1E0 /* libPods-Foodicted.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD451F401F421C98F2689580 /* libPods-Foodicted.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0CB009841F95323B00DBA8C2 /* SearchResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchResultViewController.h; sourceTree = "<group>"; };
+		0CB009851F95323B00DBA8C2 /* SearchResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchResultViewController.m; sourceTree = "<group>"; };
+		0CB009861F95323B00DBA8C2 /* SearchResultViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchResultViewController.xib; sourceTree = "<group>"; };
+		0CB0098A1F95369400DBA8C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Foodicted/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
+		0CB804951F953C1900AA90E6 /* ListOfRecipies.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListOfRecipies.h; sourceTree = "<group>"; };
+		0CB804961F953C1900AA90E6 /* ListOfRecipies.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListOfRecipies.m; sourceTree = "<group>"; };
+		0CB804981F953C3700AA90E6 /* Recipie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Recipie.h; sourceTree = "<group>"; };
+		0CB804991F953C3700AA90E6 /* Recipie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Recipie.m; sourceTree = "<group>"; };
+		0CC39E2E1F92AFCA00E916BD /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
+		0CC39E2F1F92AFCA00E916BD /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
+		0CC39E321F92AFCA00E916BD /* SearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
+		0CC39E351F92AFF800E916BD /* SearchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchView.h; sourceTree = "<group>"; };
+		0CC39E361F92AFF800E916BD /* SearchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchView.m; sourceTree = "<group>"; };
+		0CC39E531F92B55700E916BD /* SearchApiCall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchApiCall.h; sourceTree = "<group>"; };
+		0CC39E541F92B55700E916BD /* SearchApiCall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchApiCall.m; sourceTree = "<group>"; };
+		0CC39E561F92BB4700E916BD /* SearchApiHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchApiHandler.h; sourceTree = "<group>"; };
+		0CC39E571F92BB4700E916BD /* SearchApiHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchApiHandler.m; sourceTree = "<group>"; };
+		0CD53B5B1F8F5C3F00E18CFD /* Foodicted.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Foodicted.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0CD53B5F1F8F5C3F00E18CFD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0CD53B6A1F8F5C3F00E18CFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0CD53B6D1F8F5C3F00E18CFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0CD53B6F1F8F5C3F00E18CFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0CD53B771F8F5D3400E18CFD /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0CD53B781F8F5D3400E18CFD /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		25EE20A91A6429A20711740B /* Pods-Foodicted.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Foodicted.release.xcconfig"; path = "Pods/Target Support Files/Pods-Foodicted/Pods-Foodicted.release.xcconfig"; sourceTree = "<group>"; };
+		92F07BC4DACD4F4B1022F5AE /* Pods-Foodicted.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Foodicted.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Foodicted/Pods-Foodicted.debug.xcconfig"; sourceTree = "<group>"; };
+		BD451F401F421C98F2689580 /* libPods-Foodicted.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Foodicted.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0CD53B581F8F5C3F00E18CFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82637EBB05E052C0DB89C1E0 /* libPods-Foodicted.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0CB0097D1F95318A00DBA8C2 /* SearchResultScreen */ = {
+			isa = PBXGroup;
+			children = (
+				0CB009811F95320700DBA8C2 /* SearchResultController */,
+				0CB009821F95320700DBA8C2 /* SearchResultHandler */,
+				0CB009831F95320700DBA8C2 /* SearchResultView */,
+			);
+			path = SearchResultScreen;
+			sourceTree = "<group>";
+		};
+		0CB009811F95320700DBA8C2 /* SearchResultController */ = {
+			isa = PBXGroup;
+			children = (
+				0CB009841F95323B00DBA8C2 /* SearchResultViewController.h */,
+				0CB009851F95323B00DBA8C2 /* SearchResultViewController.m */,
+				0CB009861F95323B00DBA8C2 /* SearchResultViewController.xib */,
+			);
+			path = SearchResultController;
+			sourceTree = "<group>";
+		};
+		0CB009821F95320700DBA8C2 /* SearchResultHandler */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SearchResultHandler;
+			sourceTree = "<group>";
+		};
+		0CB009831F95320700DBA8C2 /* SearchResultView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SearchResultView;
+			sourceTree = "<group>";
+		};
+		0CB804911F953B6400AA90E6 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				0CB804921F953B6400AA90E6 /* SearchResult */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		0CB804921F953B6400AA90E6 /* SearchResult */ = {
+			isa = PBXGroup;
+			children = (
+				0CB804931F953B6400AA90E6 /* ListOfRecipies */,
+				0CB804941F953B6400AA90E6 /* Recipie */,
+			);
+			path = SearchResult;
+			sourceTree = "<group>";
+		};
+		0CB804931F953B6400AA90E6 /* ListOfRecipies */ = {
+			isa = PBXGroup;
+			children = (
+				0CB804951F953C1900AA90E6 /* ListOfRecipies.h */,
+				0CB804961F953C1900AA90E6 /* ListOfRecipies.m */,
+			);
+			path = ListOfRecipies;
+			sourceTree = "<group>";
+		};
+		0CB804941F953B6400AA90E6 /* Recipie */ = {
+			isa = PBXGroup;
+			children = (
+				0CB804981F953C3700AA90E6 /* Recipie.h */,
+				0CB804991F953C3700AA90E6 /* Recipie.m */,
+			);
+			path = Recipie;
+			sourceTree = "<group>";
+		};
+		0CC39E2D1F92AFCA00E916BD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0CC39E2E1F92AFCA00E916BD /* SearchViewController.h */,
+				0CC39E2F1F92AFCA00E916BD /* SearchViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0CC39E301F92AFCA00E916BD /* Handler */ = {
+			isa = PBXGroup;
+			children = (
+				0CC39E561F92BB4700E916BD /* SearchApiHandler.h */,
+				0CC39E571F92BB4700E916BD /* SearchApiHandler.m */,
+			);
+			path = Handler;
+			sourceTree = "<group>";
+		};
+		0CC39E311F92AFCA00E916BD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0CC39E321F92AFCA00E916BD /* SearchViewController.xib */,
+				0CC39E351F92AFF800E916BD /* SearchView.h */,
+				0CC39E361F92AFF800E916BD /* SearchView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0CC39E4E1F92B14200E916BD /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				0CC39E4F1F92B14200E916BD /* SearchApiCall */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		0CC39E4F1F92B14200E916BD /* SearchApiCall */ = {
+			isa = PBXGroup;
+			children = (
+				0CC39E531F92B55700E916BD /* SearchApiCall.h */,
+				0CC39E541F92B55700E916BD /* SearchApiCall.m */,
+			);
+			path = SearchApiCall;
+			sourceTree = "<group>";
+		};
+		0CD53B521F8F5C3F00E18CFD = {
+			isa = PBXGroup;
+			children = (
+				0CD53B5D1F8F5C3F00E18CFD /* Foodicted */,
+				0CD53B5C1F8F5C3F00E18CFD /* Products */,
+				5E30543605C11FCF4E997316 /* Pods */,
+				3F4368024AB751DF21F51DA6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0CD53B5C1F8F5C3F00E18CFD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0CD53B5B1F8F5C3F00E18CFD /* Foodicted.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0CD53B5D1F8F5C3F00E18CFD /* Foodicted */ = {
+			isa = PBXGroup;
+			children = (
+				0CD53B751F8F5D3400E18CFD /* Classes */,
+				0CD53B6A1F8F5C3F00E18CFD /* Assets.xcassets */,
+				0CD53B6C1F8F5C3F00E18CFD /* LaunchScreen.storyboard */,
+				0CD53B6F1F8F5C3F00E18CFD /* Info.plist */,
+				0CD53B5E1F8F5C3F00E18CFD /* Supporting Files */,
+			);
+			path = Foodicted;
+			sourceTree = "<group>";
+		};
+		0CD53B5E1F8F5C3F00E18CFD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0CD53B5F1F8F5C3F00E18CFD /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0CD53B751F8F5D3400E18CFD /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				0CB804911F953B6400AA90E6 /* Entity */,
+				0CC39E4E1F92B14200E916BD /* Networking */,
+				0CD53B761F8F5D3400E18CFD /* App Delegate */,
+				0CB0097D1F95318A00DBA8C2 /* SearchResultScreen */,
+				0CD53B791F8F5D3400E18CFD /* SearchScreen */,
+				0CB009891F95369400DBA8C2 /* Main.storyboard */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		0CD53B761F8F5D3400E18CFD /* App Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				0CD53B771F8F5D3400E18CFD /* AppDelegate.h */,
+				0CD53B781F8F5D3400E18CFD /* AppDelegate.m */,
+			);
+			path = "App Delegate";
+			sourceTree = "<group>";
+		};
+		0CD53B791F8F5D3400E18CFD /* SearchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				0CC39E2D1F92AFCA00E916BD /* Controller */,
+				0CC39E301F92AFCA00E916BD /* Handler */,
+				0CC39E311F92AFCA00E916BD /* View */,
+			);
+			path = SearchScreen;
+			sourceTree = "<group>";
+		};
+		3F4368024AB751DF21F51DA6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BD451F401F421C98F2689580 /* libPods-Foodicted.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5E30543605C11FCF4E997316 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				92F07BC4DACD4F4B1022F5AE /* Pods-Foodicted.debug.xcconfig */,
+				25EE20A91A6429A20711740B /* Pods-Foodicted.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0CD53B5A1F8F5C3F00E18CFD /* Foodicted */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0CD53B721F8F5C3F00E18CFD /* Build configuration list for PBXNativeTarget "Foodicted" */;
+			buildPhases = (
+				FF158EC15D491AB128F523E7 /* [CP] Check Pods Manifest.lock */,
+				0CD53B571F8F5C3F00E18CFD /* Sources */,
+				0CD53B581F8F5C3F00E18CFD /* Frameworks */,
+				0CD53B591F8F5C3F00E18CFD /* Resources */,
+				0236F50A0AE9C545E8751459 /* [CP] Embed Pods Frameworks */,
+				224F95540CBFF7CB63B7EAE6 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Foodicted;
+			productName = Foodicted;
+			productReference = 0CD53B5B1F8F5C3F00E18CFD /* Foodicted.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0CD53B531F8F5C3F00E18CFD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = 1byte;
+				TargetAttributes = {
+					0CD53B5A1F8F5C3F00E18CFD = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = LMP3TEWDKM;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 0CD53B561F8F5C3F00E18CFD /* Build configuration list for PBXProject "Foodicted" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0CD53B521F8F5C3F00E18CFD;
+			productRefGroup = 0CD53B5C1F8F5C3F00E18CFD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0CD53B5A1F8F5C3F00E18CFD /* Foodicted */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0CD53B591F8F5C3F00E18CFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CB009881F95323B00DBA8C2 /* SearchResultViewController.xib in Resources */,
+				0CB0098B1F95369400DBA8C2 /* Main.storyboard in Resources */,
+				0CD53B6E1F8F5C3F00E18CFD /* LaunchScreen.storyboard in Resources */,
+				0CD53B6B1F8F5C3F00E18CFD /* Assets.xcassets in Resources */,
+				0CC39E341F92AFCA00E916BD /* SearchViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0236F50A0AE9C545E8751459 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Foodicted/Pods-Foodicted-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		224F95540CBFF7CB63B7EAE6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Foodicted/Pods-Foodicted-resources.sh",
+				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Foodicted/Pods-Foodicted-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FF158EC15D491AB128F523E7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Foodicted-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0CD53B571F8F5C3F00E18CFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CB804971F953C1900AA90E6 /* ListOfRecipies.m in Sources */,
+				0CC39E371F92AFF800E916BD /* SearchView.m in Sources */,
+				0CD53B7C1F8F5D3400E18CFD /* AppDelegate.m in Sources */,
+				0CC39E331F92AFCA00E916BD /* SearchViewController.m in Sources */,
+				0CC39E551F92B55700E916BD /* SearchApiCall.m in Sources */,
+				0CB009871F95323B00DBA8C2 /* SearchResultViewController.m in Sources */,
+				0CD53B601F8F5C3F00E18CFD /* main.m in Sources */,
+				0CC39E581F92BB4700E916BD /* SearchApiHandler.m in Sources */,
+				0CB8049A1F953C3700AA90E6 /* Recipie.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0CB009891F95369400DBA8C2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0CB0098A1F95369400DBA8C2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0CD53B6C1F8F5C3F00E18CFD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0CD53B6D1F8F5C3F00E18CFD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0CD53B701F8F5C3F00E18CFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0CD53B711F8F5C3F00E18CFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0CD53B731F8F5C3F00E18CFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92F07BC4DACD4F4B1022F5AE /* Pods-Foodicted.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = LMP3TEWDKM;
+				INFOPLIST_FILE = Foodicted/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.alee.Foodicted;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0CD53B741F8F5C3F00E18CFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25EE20A91A6429A20711740B /* Pods-Foodicted.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = LMP3TEWDKM;
+				INFOPLIST_FILE = Foodicted/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.alee.Foodicted;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0CD53B561F8F5C3F00E18CFD /* Build configuration list for PBXProject "Foodicted" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0CD53B701F8F5C3F00E18CFD /* Debug */,
+				0CD53B711F8F5C3F00E18CFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0CD53B721F8F5C3F00E18CFD /* Build configuration list for PBXNativeTarget "Foodicted" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0CD53B731F8F5C3F00E18CFD /* Debug */,
+				0CD53B741F8F5C3F00E18CFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0CD53B531F8F5C3F00E18CFD /* Project object */;
+}
