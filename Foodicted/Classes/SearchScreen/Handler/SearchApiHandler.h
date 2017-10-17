@@ -10,4 +10,9 @@
 
 @interface SearchApiHandler : NSObject
 
+@property (strong,nonatomic) void (^returnResponceToController)(NSDictionary*);
+@property (strong,nonatomic) void (^searchCall)(NSString*);
+
+-(void)searchApiCall:(NSString*)seacrhText;
+
 @end

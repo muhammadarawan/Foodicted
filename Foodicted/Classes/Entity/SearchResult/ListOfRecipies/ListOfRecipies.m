@@ -7,7 +7,17 @@
 //
 
 #import "ListOfRecipies.h"
-
+#import "Recipie.h"
 @implementation ListOfRecipies
 
++(NSDictionary*)JSONKeyPathsByPropertyKey{
+    return @{@"count":@"count"
+             ,@"recipiesListArray":@"recipes"
+             };
+}
+
++(NSValueTransformer*)recipiesListArrayJSONTransformer{
+    
+    return [MTLJSONAdapter arrayTransformerWithModelClass:[Recipie class]];
+}
 @end

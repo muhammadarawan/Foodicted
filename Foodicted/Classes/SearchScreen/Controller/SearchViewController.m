@@ -8,42 +8,54 @@
 
 #import "SearchViewController.h"
 #import "AFNetworking.h"
+#import "SearchView.h"
+#import "SearchApiHandler.h"
+#include "SearchResultViewController.h"
+#include "ListOfRecipies.h"
 @interface SearchViewController ()
-@property (strong,atomic) NSString *api;
+//@property (strong,nonatomic) SearchView *searchView;
+@property (strong,nonatomic) NSDictionary *searchData;
+@property (strong, nonatomic) IBOutlet SearchView *searchView;
+@property (strong,nonatomic) ListOfRecipies *listOfRecipies;
+@property (strong,nonatomic) SearchApiHandler *searchHandlerObj;
 @end
 
 @implementation SearchViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-//    NSString *searchName=@"lasagna";
-//    NSString *apiKey=@"8bf0ea213bed1c7191bf4096260fa37f";
-//     _api=[[NSString alloc]initWithFormat:@"http://food2fork.com/api/search?key=%@&q=%@",apiKey,searchName];
-//    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
-////    manager.responseSerializer = [AFHTTPResponseSerializer serializer];
-//    manager.responseSerializer.acceptableContentTypes=[NSSet setWithObject:@"text/html"];
-//    
-//    [manager GET:_api parameters: nil progress:nil success:^(NSURLSessionTask *task, id responseObject) {
-//        NSLog(@"JSON: %@", responseObject[@"count"]);
-//    } failure:^(NSURLSessionTask *operation, NSError *error) {
-//        NSLog(@"Error: %@", error);
-//    }];
-
+    _searchHandlerObj=[SearchApiHandler alloc];
+//    _searchView =[SearchView alloc];
+//    _searchView=[SearchView alloc];
+    [self setCallForResponce];
+    [self setCallForSearchButtonPress];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma - setCallForSearchButton
+
+-(void)setCallForSearchButtonPress{
+
+    void (^searchCall)(NSString* searchText)=^(NSString *searchText){
+        [_searchHandlerObj searchApiCall:searchText];
+    };
+    _searchView.searchCall=searchCall;
 }
 
-/*
-#pragma mark - Navigation
+#pragma - setCallForHandlerResponce
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+-(void)setCallForResponce{
+    
+    void (^callFroRespnseFromHandler)(NSDictionary* response)=^(NSDictionary *response){
+        _searchData=response;
+        _listOfRecipies=[MTLJSONAdapter modelOfClass:[ListOfRecipies class] fromJSONDictionary:response error:nil];
+        SearchResultViewController *controler = [[SearchResultViewController alloc] init];
+        controler.listOfRecipies=_listOfRecipies;
+        [self.navigationController pushViewController:controler animated:YES];
+    };
+    _searchHandlerObj.returnResponceToController=callFroRespnseFromHandler;
 }
-*/
 
+-(void)viewDidAppear:(BOOL)animated{
+   
+}
 @end

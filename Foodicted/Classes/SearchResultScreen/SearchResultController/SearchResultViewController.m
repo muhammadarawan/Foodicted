@@ -7,31 +7,49 @@
 //
 
 #import "SearchResultViewController.h"
+#import "SearchResultView.h"
+#include "TableViewCell.h"
+#import "Recipie.h"
+#include "ListOfRecipies.h"
+@interface SearchResultViewController ()<UITableViewDelegate,UITableViewDataSource>
 
-@interface SearchResultViewController ()
-
+@property (strong, nonatomic) IBOutlet SearchResultView *searchResultTableView;
 @end
 
 @implementation SearchResultViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    _searchResultTableView.resultTableView.delegate=self;
+    _searchResultTableView.resultTableView.dataSource=self;
+    
 }
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return _listOfRecipies.count.integerValue;
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+-(UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    TableViewCell *cell=(TableViewCell*)[tableView dequeueReusableCellWithIdentifier:@"TableViewCell"];
+    if (cell == nil){
+        NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"TableViewCell" owner:self options:nil];
+        cell = [nib objectAtIndex:0];
+    }
+    Recipie *r=(Recipie*) [_listOfRecipies.recipiesListArray objectAtIndex:indexPath.row];
+    cell.recipieTitle.text=r.title;
+    cell.recipieRank.text=[r.social_rank stringValue];
+    
+    dispatch_async(dispatch_get_global_queue(0,0), ^{
+        NSData * data = [[NSData alloc] initWithContentsOfURL: [NSURL URLWithString: r.image_url]];
+        if ( data == nil )
+            return;
+        dispatch_async(dispatch_get_main_queue(), ^{
+            // WARNING: is the cell still using the same data by this point??
+            cell.dishImage.image = [UIImage imageWithData: data];
+        });
+    });        return cell;
+    
 }
-*/
-
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+        return 85;
+}
 @end

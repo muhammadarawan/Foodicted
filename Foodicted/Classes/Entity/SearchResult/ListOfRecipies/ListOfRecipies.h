@@ -8,6 +8,8 @@
 
 #import <Mantle/Mantle.h>
 
-@interface ListOfRecipies : MTLModel
+@interface ListOfRecipies : MTLModel<MTLJSONSerializing>
+@property (strong,nonatomic) NSNumber *count;
+@property (strong,nonatomic) NSArray *recipiesListArray;
 
 @end

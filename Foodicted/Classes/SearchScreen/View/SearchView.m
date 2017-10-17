@@ -17,5 +17,8 @@
     // Drawing code
 }
 */
+- (IBAction)searchButtonAciton:(id)sender {
+    _searchCall(_searchTextField.text);
+}
 
 @end

@@ -8,11 +8,12 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchViewController">
             <connections>
+                <outlet property="searchView" destination="i5M-Pr-FkT" id="tWZ-T1-0Rg"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" customClass="SearchView">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
@@ -25,17 +26,27 @@
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Mh-c4-5hC">
-                    <frame key="frameInset" minX="163" minY="371" width="48" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Mh-c4-5hC">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="48" id="MFc-Ve-QaW"/>
+                        <constraint firstAttribute="height" constant="30" id="hGm-kd-7el"/>
+                    </constraints>
                     <state key="normal" title="Search"/>
+                    <connections>
+                        <action selector="searchButtonAciton:" destination="i5M-Pr-FkT" eventType="touchUpInside" id="ZDY-2m-Thi"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="bRv-zK-5MP" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="1tW-qi-Oye"/>
                 <constraint firstItem="bRv-zK-5MP" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Fcf-0Q-KSu"/>
+                <constraint firstItem="3Mh-c4-5hC" firstAttribute="top" secondItem="bRv-zK-5MP" secondAttribute="bottom" constant="19.5" id="hlL-0F-w2y"/>
+                <constraint firstItem="3Mh-c4-5hC" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ogP-HT-ADw"/>
             </constraints>
+            <connections>
+                <outlet property="searchTextField" destination="bRv-zK-5MP" id="4y3-tx-xmR"/>
+            </connections>
             <point key="canvasLocation" x="33.5" y="53.5"/>
         </view>
     </objects>

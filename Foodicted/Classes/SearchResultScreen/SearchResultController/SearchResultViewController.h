@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "ListOfRecipies.h"
 @interface SearchResultViewController : UIViewController
+@property (retain,nonatomic) ListOfRecipies *listOfRecipies;
 
 @end

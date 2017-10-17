@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface SearchView : UIView
-
+@property (strong, nonatomic) IBOutlet UITextField *searchTextField;
+@property (strong ,nonatomic) void (^searchCall)(NSString*);
 @end
