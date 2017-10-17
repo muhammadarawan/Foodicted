@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0CAE6C141F963D3C00DB5D2F /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CAE6C121F963D3C00DB5D2F /* TableViewCell.m */; };
+		0CAE6C151F963D3C00DB5D2F /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CAE6C131F963D3C00DB5D2F /* TableViewCell.xib */; };
 		0CB009871F95323B00DBA8C2 /* SearchResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CB009851F95323B00DBA8C2 /* SearchResultViewController.m */; };
 		0CB009881F95323B00DBA8C2 /* SearchResultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CB009861F95323B00DBA8C2 /* SearchResultViewController.xib */; };
 		0CB0098B1F95369400DBA8C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CB009891F95369400DBA8C2 /* Main.storyboard */; };
 		0CB804971F953C1900AA90E6 /* ListOfRecipies.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CB804961F953C1900AA90E6 /* ListOfRecipies.m */; };
 		0CB8049A1F953C3700AA90E6 /* Recipie.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CB804991F953C3700AA90E6 /* Recipie.m */; };
 		0CB8049D1F95519300AA90E6 /* SearchResultView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CB8049C1F95519300AA90E6 /* SearchResultView.m */; };
-		0CB804A11F95522800AA90E6 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CB8049F1F95522800AA90E6 /* TableViewCell.m */; };
-		0CB804A21F95522800AA90E6 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CB804A01F95522800AA90E6 /* TableViewCell.xib */; };
 		0CC39E331F92AFCA00E916BD /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CC39E2F1F92AFCA00E916BD /* SearchViewController.m */; };
 		0CC39E341F92AFCA00E916BD /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CC39E321F92AFCA00E916BD /* SearchViewController.xib */; };
 		0CC39E371F92AFF800E916BD /* SearchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CC39E361F92AFF800E916BD /* SearchView.m */; };
@@ -28,6 +28,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0CAE6C111F963D3C00DB5D2F /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		0CAE6C121F963D3C00DB5D2F /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
+		0CAE6C131F963D3C00DB5D2F /* TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		0CB009841F95323B00DBA8C2 /* SearchResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchResultViewController.h; sourceTree = "<group>"; };
 		0CB009851F95323B00DBA8C2 /* SearchResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchResultViewController.m; sourceTree = "<group>"; };
 		0CB009861F95323B00DBA8C2 /* SearchResultViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchResultViewController.xib; sourceTree = "<group>"; };
@@ -38,9 +41,6 @@
 		0CB804991F953C3700AA90E6 /* Recipie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Recipie.m; sourceTree = "<group>"; };
 		0CB8049B1F95519300AA90E6 /* SearchResultView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchResultView.h; sourceTree = "<group>"; };
 		0CB8049C1F95519300AA90E6 /* SearchResultView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchResultView.m; sourceTree = "<group>"; };
-		0CB8049E1F95522800AA90E6 /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
-		0CB8049F1F95522800AA90E6 /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
-		0CB804A01F95522800AA90E6 /* TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		0CC39E2E1F92AFCA00E916BD /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
 		0CC39E2F1F92AFCA00E916BD /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
 		0CC39E321F92AFCA00E916BD /* SearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
@@ -74,15 +74,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0CAE6C101F963D3C00DB5D2F /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				0CAE6C111F963D3C00DB5D2F /* TableViewCell.h */,
+				0CAE6C121F963D3C00DB5D2F /* TableViewCell.m */,
+				0CAE6C131F963D3C00DB5D2F /* TableViewCell.xib */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
 		0CB0097D1F95318A00DBA8C2 /* SearchResultScreen */ = {
 			isa = PBXGroup;
 			children = (
 				0CB009811F95320700DBA8C2 /* SearchResultController */,
 				0CB009821F95320700DBA8C2 /* SearchResultHandler */,
 				0CB009831F95320700DBA8C2 /* SearchResultView */,
-				0CB8049E1F95522800AA90E6 /* TableViewCell.h */,
-				0CB8049F1F95522800AA90E6 /* TableViewCell.m */,
-				0CB804A01F95522800AA90E6 /* TableViewCell.xib */,
+				0CAE6C101F963D3C00DB5D2F /* TableViewCell */,
 			);
 			path = SearchResultScreen;
 			sourceTree = "<group>";
@@ -343,7 +351,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0CB009881F95323B00DBA8C2 /* SearchResultViewController.xib in Resources */,
-				0CB804A21F95522800AA90E6 /* TableViewCell.xib in Resources */,
+				0CAE6C151F963D3C00DB5D2F /* TableViewCell.xib in Resources */,
 				0CB0098B1F95369400DBA8C2 /* Main.storyboard in Resources */,
 				0CD53B6E1F8F5C3F00E18CFD /* LaunchScreen.storyboard in Resources */,
 				0CD53B6B1F8F5C3F00E18CFD /* Assets.xcassets in Resources */,
@@ -413,6 +421,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0CB804971F953C1900AA90E6 /* ListOfRecipies.m in Sources */,
+				0CAE6C141F963D3C00DB5D2F /* TableViewCell.m in Sources */,
 				0CC39E371F92AFF800E916BD /* SearchView.m in Sources */,
 				0CD53B7C1F8F5D3400E18CFD /* AppDelegate.m in Sources */,
 				0CC39E331F92AFCA00E916BD /* SearchViewController.m in Sources */,
@@ -421,7 +430,6 @@
 				0CD53B601F8F5C3F00E18CFD /* main.m in Sources */,
 				0CB8049D1F95519300AA90E6 /* SearchResultView.m in Sources */,
 				0CC39E581F92BB4700E916BD /* SearchApiHandler.m in Sources */,
-				0CB804A11F95522800AA90E6 /* TableViewCell.m in Sources */,
 				0CB8049A1F953C3700AA90E6 /* Recipie.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
