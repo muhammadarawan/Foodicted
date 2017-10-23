@@ -10,5 +10,9 @@
 
 @interface SearchView : UIView
 @property (strong, nonatomic) IBOutlet UITextField *searchTextField;
+@property (strong, nonatomic) IBOutlet UIButton *searchButton;
+@property (strong, nonatomic) IBOutlet UILabel *searchLable;
 @property (strong ,nonatomic) void (^searchCall)(NSString*);
+
+- (IBAction)searchButtonAciton:(id)sender;
 @end

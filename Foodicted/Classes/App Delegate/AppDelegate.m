@@ -19,6 +19,7 @@
     SearchViewController *search=[[SearchViewController alloc] initWithNibName:@"SearchViewController" bundle:nil];
     UINavigationController *searchNav=[[UINavigationController alloc] initWithRootViewController:search];
     [self.window setRootViewController:searchNav];
+    
     [self.window makeKeyAndVisible];
     return YES;
 }

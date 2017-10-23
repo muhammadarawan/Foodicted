@@ -1,10 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Avenir.ttc">
+            <string>Avenir-Book</string>
+            <string>Avenir-Heavy</string>
+        </array>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchViewController">
             <connections>
@@ -17,37 +25,78 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search Key Word" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bRv-zK-5MP">
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Recipie Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bRv-zK-5MP">
+                    <rect key="frame" x="62.5" y="369" width="250" height="30"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="30" id="VfZ-iC-EJI"/>
-                        <constraint firstAttribute="width" constant="200" id="pZ8-Kf-PDp"/>
+                        <constraint firstAttribute="height" constant="30" id="ITe-6u-gdu"/>
+                        <constraint firstAttribute="width" constant="250" id="X7r-pA-OwU"/>
                     </constraints>
-                    <nil key="textColor"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
+                    <color key="textColor" red="0.88044351340000004" green="0.70958083869999999" blue="0.2117136419" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
+                    <textInputTraits key="textInputTraits" returnKeyType="search"/>
                 </textField>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Mh-c4-5hC">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="recipeanut" translatesAutoresizingMaskIntoConstraints="NO" id="nbf-RF-5cO">
+                    <rect key="frame" x="37.5" y="135" width="300" height="150"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="48" id="MFc-Ve-QaW"/>
-                        <constraint firstAttribute="height" constant="30" id="hGm-kd-7el"/>
+                        <constraint firstAttribute="width" constant="300" id="5qS-0O-wuD"/>
+                        <constraint firstAttribute="height" constant="150" id="QAi-9w-xg7"/>
                     </constraints>
-                    <state key="normal" title="Search"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quick Search" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qaH-U2-VeK">
+                    <rect key="frame" x="77.5" y="319" width="220" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="220" id="Azz-2r-PYU"/>
+                        <constraint firstAttribute="height" constant="21" id="ayf-oQ-qul"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
+                    <color key="textColor" red="0.88044351340000004" green="0.70958083869999999" blue="0.2117136419" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Mh-c4-5hC">
+                    <rect key="frame" x="125" y="412" width="125" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="Fe8-Ja-e6R"/>
+                        <constraint firstAttribute="width" constant="125" id="Umx-rv-zW1"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                    <state key="normal">
+                        <color key="titleColor" red="1" green="0.59289975414168961" blue="0.35209701793767034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
                     <connections>
                         <action selector="searchButtonAciton:" destination="i5M-Pr-FkT" eventType="touchUpInside" id="ZDY-2m-Thi"/>
                     </connections>
                 </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="On9-co-I8e">
+                    <rect key="frame" x="125" y="412" width="125" height="30"/>
+                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                    <color key="textColor" red="0.88044351340000004" green="0.70958083869999999" blue="0.2117136419" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="bRv-zK-5MP" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="1tW-qi-Oye"/>
-                <constraint firstItem="bRv-zK-5MP" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Fcf-0Q-KSu"/>
-                <constraint firstItem="3Mh-c4-5hC" firstAttribute="top" secondItem="bRv-zK-5MP" secondAttribute="bottom" constant="19.5" id="hlL-0F-w2y"/>
-                <constraint firstItem="3Mh-c4-5hC" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ogP-HT-ADw"/>
+                <constraint firstItem="3Mh-c4-5hC" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="25a-Qb-1nZ"/>
+                <constraint firstItem="qaH-U2-VeK" firstAttribute="top" secondItem="nbf-RF-5cO" secondAttribute="bottom" constant="34" id="B6w-l9-Ut7"/>
+                <constraint firstItem="On9-co-I8e" firstAttribute="top" secondItem="3Mh-c4-5hC" secondAttribute="top" id="EnO-at-RRr"/>
+                <constraint firstItem="On9-co-I8e" firstAttribute="leading" secondItem="3Mh-c4-5hC" secondAttribute="leading" id="IGg-6c-Suq"/>
+                <constraint firstItem="On9-co-I8e" firstAttribute="width" secondItem="3Mh-c4-5hC" secondAttribute="width" id="IcY-h3-8gJ"/>
+                <constraint firstItem="On9-co-I8e" firstAttribute="height" secondItem="3Mh-c4-5hC" secondAttribute="height" id="NMB-aG-4oZ"/>
+                <constraint firstItem="3Mh-c4-5hC" firstAttribute="top" secondItem="bRv-zK-5MP" secondAttribute="bottom" constant="13" id="QyS-G4-6ux"/>
+                <constraint firstItem="qaH-U2-VeK" firstAttribute="centerX" secondItem="bRv-zK-5MP" secondAttribute="centerX" id="UND-bz-3Au"/>
+                <constraint firstItem="qaH-U2-VeK" firstAttribute="centerX" secondItem="nbf-RF-5cO" secondAttribute="centerX" id="XvM-Q7-kBt"/>
+                <constraint firstItem="bRv-zK-5MP" firstAttribute="top" secondItem="qaH-U2-VeK" secondAttribute="bottom" constant="29" id="Ydz-CZ-mck"/>
+                <constraint firstItem="nbf-RF-5cO" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="135" id="bce-tO-5Ul"/>
+                <constraint firstItem="nbf-RF-5cO" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="qHY-KO-j82"/>
             </constraints>
             <connections>
+                <outlet property="searchButton" destination="3Mh-c4-5hC" id="wPt-mA-VaX"/>
+                <outlet property="searchLable" destination="On9-co-I8e" id="dt9-rT-VgH"/>
                 <outlet property="searchTextField" destination="bRv-zK-5MP" id="4y3-tx-xmR"/>
             </connections>
             <point key="canvasLocation" x="33.5" y="53.5"/>
         </view>
     </objects>
+    <resources>
+        <image name="recipeanut" width="279" height="115"/>
+    </resources>
 </document>

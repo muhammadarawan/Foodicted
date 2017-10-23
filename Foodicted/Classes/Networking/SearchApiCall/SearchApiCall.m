@@ -12,7 +12,9 @@
 
 -(void)searcApiCall:(NSString *)searchText{
         NSString *apiKey=@"8bf0ea213bed1c7191bf4096260fa37f";
+    
         NSString* apiCall=[[NSString alloc]initWithFormat:@"http://food2fork.com/api/search?key=%@&q=%@",apiKey,searchText];
+    apiCall=[apiCall stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
         AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
         manager.responseSerializer.acceptableContentTypes=[NSSet setWithObject:@"text/html"];
     

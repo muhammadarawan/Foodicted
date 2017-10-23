@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		0CAE6C141F963D3C00DB5D2F /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CAE6C121F963D3C00DB5D2F /* TableViewCell.m */; };
 		0CAE6C151F963D3C00DB5D2F /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CAE6C131F963D3C00DB5D2F /* TableViewCell.xib */; };
+		0CAE6C191F96498D00DB5D2F /* RecipieApiCall.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CAE6C181F96498D00DB5D2F /* RecipieApiCall.m */; };
+		0CAE6C451F96644C00DB5D2F /* RecipieWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CAE6C431F96644C00DB5D2F /* RecipieWebViewController.m */; };
+		0CAE6C461F96644C00DB5D2F /* RecipieWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CAE6C441F96644C00DB5D2F /* RecipieWebViewController.xib */; };
 		0CB009871F95323B00DBA8C2 /* SearchResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CB009851F95323B00DBA8C2 /* SearchResultViewController.m */; };
 		0CB009881F95323B00DBA8C2 /* SearchResultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CB009861F95323B00DBA8C2 /* SearchResultViewController.xib */; };
 		0CB0098B1F95369400DBA8C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CB009891F95369400DBA8C2 /* Main.storyboard */; };
 		0CB804971F953C1900AA90E6 /* ListOfRecipies.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CB804961F953C1900AA90E6 /* ListOfRecipies.m */; };
 		0CB8049A1F953C3700AA90E6 /* Recipie.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CB804991F953C3700AA90E6 /* Recipie.m */; };
 		0CB8049D1F95519300AA90E6 /* SearchResultView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CB8049C1F95519300AA90E6 /* SearchResultView.m */; };
+		0CC149361F9D2A35006853C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CC149351F9D2A34006853C8 /* Assets.xcassets */; };
 		0CC39E331F92AFCA00E916BD /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CC39E2F1F92AFCA00E916BD /* SearchViewController.m */; };
 		0CC39E341F92AFCA00E916BD /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CC39E321F92AFCA00E916BD /* SearchViewController.xib */; };
 		0CC39E371F92AFF800E916BD /* SearchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CC39E361F92AFF800E916BD /* SearchView.m */; };
 		0CC39E551F92B55700E916BD /* SearchApiCall.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CC39E541F92B55700E916BD /* SearchApiCall.m */; };
 		0CC39E581F92BB4700E916BD /* SearchApiHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CC39E571F92BB4700E916BD /* SearchApiHandler.m */; };
 		0CD53B601F8F5C3F00E18CFD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD53B5F1F8F5C3F00E18CFD /* main.m */; };
-		0CD53B6B1F8F5C3F00E18CFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CD53B6A1F8F5C3F00E18CFD /* Assets.xcassets */; };
 		0CD53B6E1F8F5C3F00E18CFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CD53B6C1F8F5C3F00E18CFD /* LaunchScreen.storyboard */; };
 		0CD53B7C1F8F5D3400E18CFD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD53B781F8F5D3400E18CFD /* AppDelegate.m */; };
+		0CFAA2641F9A5135008D67C9 /* UIButton+buttonDesign.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CFAA2631F9A5135008D67C9 /* UIButton+buttonDesign.m */; };
+		0CFAA2671F9A5957008D67C9 /* UITextField+textDesign.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CFAA2661F9A5957008D67C9 /* UITextField+textDesign.m */; };
+		0CFAA26D1F9A5E86008D67C9 /* UIImageView+Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CFAA26C1F9A5E86008D67C9 /* UIImageView+Helpers.m */; };
 		82637EBB05E052C0DB89C1E0 /* libPods-Foodicted.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD451F401F421C98F2689580 /* libPods-Foodicted.a */; };
 /* End PBXBuildFile section */
 
@@ -31,9 +37,14 @@
 		0CAE6C111F963D3C00DB5D2F /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
 		0CAE6C121F963D3C00DB5D2F /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
 		0CAE6C131F963D3C00DB5D2F /* TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		0CAE6C171F96498D00DB5D2F /* RecipieApiCall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipieApiCall.h; sourceTree = "<group>"; };
+		0CAE6C181F96498D00DB5D2F /* RecipieApiCall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipieApiCall.m; sourceTree = "<group>"; };
+		0CAE6C421F96644C00DB5D2F /* RecipieWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipieWebViewController.h; sourceTree = "<group>"; };
+		0CAE6C431F96644C00DB5D2F /* RecipieWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipieWebViewController.m; sourceTree = "<group>"; };
+		0CAE6C441F96644C00DB5D2F /* RecipieWebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecipieWebViewController.xib; sourceTree = "<group>"; };
 		0CB009841F95323B00DBA8C2 /* SearchResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchResultViewController.h; sourceTree = "<group>"; };
 		0CB009851F95323B00DBA8C2 /* SearchResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchResultViewController.m; sourceTree = "<group>"; };
-		0CB009861F95323B00DBA8C2 /* SearchResultViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchResultViewController.xib; sourceTree = "<group>"; };
+		0CB009861F95323B00DBA8C2 /* SearchResultViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SearchResultViewController.xib; path = ../SearchResultController/SearchResultViewController.xib; sourceTree = "<group>"; };
 		0CB0098A1F95369400DBA8C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Foodicted/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
 		0CB804951F953C1900AA90E6 /* ListOfRecipies.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListOfRecipies.h; sourceTree = "<group>"; };
 		0CB804961F953C1900AA90E6 /* ListOfRecipies.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListOfRecipies.m; sourceTree = "<group>"; };
@@ -41,6 +52,7 @@
 		0CB804991F953C3700AA90E6 /* Recipie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Recipie.m; sourceTree = "<group>"; };
 		0CB8049B1F95519300AA90E6 /* SearchResultView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchResultView.h; sourceTree = "<group>"; };
 		0CB8049C1F95519300AA90E6 /* SearchResultView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchResultView.m; sourceTree = "<group>"; };
+		0CC149351F9D2A34006853C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0CC39E2E1F92AFCA00E916BD /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
 		0CC39E2F1F92AFCA00E916BD /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
 		0CC39E321F92AFCA00E916BD /* SearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
@@ -52,11 +64,16 @@
 		0CC39E571F92BB4700E916BD /* SearchApiHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchApiHandler.m; sourceTree = "<group>"; };
 		0CD53B5B1F8F5C3F00E18CFD /* Foodicted.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Foodicted.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CD53B5F1F8F5C3F00E18CFD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		0CD53B6A1F8F5C3F00E18CFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0CD53B6D1F8F5C3F00E18CFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0CD53B6F1F8F5C3F00E18CFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0CD53B771F8F5D3400E18CFD /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0CD53B781F8F5D3400E18CFD /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0CFAA2621F9A5135008D67C9 /* UIButton+buttonDesign.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+buttonDesign.h"; sourceTree = "<group>"; };
+		0CFAA2631F9A5135008D67C9 /* UIButton+buttonDesign.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+buttonDesign.m"; sourceTree = "<group>"; };
+		0CFAA2651F9A5957008D67C9 /* UITextField+textDesign.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+textDesign.h"; sourceTree = "<group>"; };
+		0CFAA2661F9A5957008D67C9 /* UITextField+textDesign.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+textDesign.m"; sourceTree = "<group>"; };
+		0CFAA26B1F9A5E86008D67C9 /* UIImageView+Helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImageView+Helpers.h"; path = "../../../../1byte/Arera/Arera/Categories/UIImageView+Helpers.h"; sourceTree = "<group>"; };
+		0CFAA26C1F9A5E86008D67C9 /* UIImageView+Helpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+Helpers.m"; path = "../../../../1byte/Arera/Arera/Categories/UIImageView+Helpers.m"; sourceTree = "<group>"; };
 		25EE20A91A6429A20711740B /* Pods-Foodicted.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Foodicted.release.xcconfig"; path = "Pods/Target Support Files/Pods-Foodicted/Pods-Foodicted.release.xcconfig"; sourceTree = "<group>"; };
 		92F07BC4DACD4F4B1022F5AE /* Pods-Foodicted.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Foodicted.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Foodicted/Pods-Foodicted.debug.xcconfig"; sourceTree = "<group>"; };
 		BD451F401F421C98F2689580 /* libPods-Foodicted.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Foodicted.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -84,6 +101,25 @@
 			path = TableViewCell;
 			sourceTree = "<group>";
 		};
+		0CAE6C161F96497300DB5D2F /* RecipieApiCall */ = {
+			isa = PBXGroup;
+			children = (
+				0CAE6C171F96498D00DB5D2F /* RecipieApiCall.h */,
+				0CAE6C181F96498D00DB5D2F /* RecipieApiCall.m */,
+			);
+			path = RecipieApiCall;
+			sourceTree = "<group>";
+		};
+		0CAE6C411F96640D00DB5D2F /* RecipieWebView */ = {
+			isa = PBXGroup;
+			children = (
+				0CAE6C421F96644C00DB5D2F /* RecipieWebViewController.h */,
+				0CAE6C431F96644C00DB5D2F /* RecipieWebViewController.m */,
+				0CAE6C441F96644C00DB5D2F /* RecipieWebViewController.xib */,
+			);
+			path = RecipieWebView;
+			sourceTree = "<group>";
+		};
 		0CB0097D1F95318A00DBA8C2 /* SearchResultScreen */ = {
 			isa = PBXGroup;
 			children = (
@@ -100,7 +136,6 @@
 			children = (
 				0CB009841F95323B00DBA8C2 /* SearchResultViewController.h */,
 				0CB009851F95323B00DBA8C2 /* SearchResultViewController.m */,
-				0CB009861F95323B00DBA8C2 /* SearchResultViewController.xib */,
 			);
 			path = SearchResultController;
 			sourceTree = "<group>";
@@ -115,6 +150,7 @@
 		0CB009831F95320700DBA8C2 /* SearchResultView */ = {
 			isa = PBXGroup;
 			children = (
+				0CB009861F95323B00DBA8C2 /* SearchResultViewController.xib */,
 				0CB8049B1F95519300AA90E6 /* SearchResultView.h */,
 				0CB8049C1F95519300AA90E6 /* SearchResultView.m */,
 			);
@@ -187,6 +223,7 @@
 		0CC39E4E1F92B14200E916BD /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				0CAE6C161F96497300DB5D2F /* RecipieApiCall */,
 				0CC39E4F1F92B14200E916BD /* SearchApiCall */,
 			);
 			path = Networking;
@@ -222,8 +259,8 @@
 		0CD53B5D1F8F5C3F00E18CFD /* Foodicted */ = {
 			isa = PBXGroup;
 			children = (
+				0CC149351F9D2A34006853C8 /* Assets.xcassets */,
 				0CD53B751F8F5D3400E18CFD /* Classes */,
-				0CD53B6A1F8F5C3F00E18CFD /* Assets.xcassets */,
 				0CD53B6C1F8F5C3F00E18CFD /* LaunchScreen.storyboard */,
 				0CD53B6F1F8F5C3F00E18CFD /* Info.plist */,
 				0CD53B5E1F8F5C3F00E18CFD /* Supporting Files */,
@@ -242,6 +279,8 @@
 		0CD53B751F8F5D3400E18CFD /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				0CFAA2611F9A50DF008D67C9 /* catogories */,
+				0CAE6C411F96640D00DB5D2F /* RecipieWebView */,
 				0CB804911F953B6400AA90E6 /* Entity */,
 				0CC39E4E1F92B14200E916BD /* Networking */,
 				0CD53B761F8F5D3400E18CFD /* App Delegate */,
@@ -269,6 +308,19 @@
 				0CC39E311F92AFCA00E916BD /* View */,
 			);
 			path = SearchScreen;
+			sourceTree = "<group>";
+		};
+		0CFAA2611F9A50DF008D67C9 /* catogories */ = {
+			isa = PBXGroup;
+			children = (
+				0CFAA2621F9A5135008D67C9 /* UIButton+buttonDesign.h */,
+				0CFAA2631F9A5135008D67C9 /* UIButton+buttonDesign.m */,
+				0CFAA2651F9A5957008D67C9 /* UITextField+textDesign.h */,
+				0CFAA2661F9A5957008D67C9 /* UITextField+textDesign.m */,
+				0CFAA26B1F9A5E86008D67C9 /* UIImageView+Helpers.h */,
+				0CFAA26C1F9A5E86008D67C9 /* UIImageView+Helpers.m */,
+			);
+			path = catogories;
 			sourceTree = "<group>";
 		};
 		3F4368024AB751DF21F51DA6 /* Frameworks */ = {
@@ -352,9 +404,10 @@
 			files = (
 				0CB009881F95323B00DBA8C2 /* SearchResultViewController.xib in Resources */,
 				0CAE6C151F963D3C00DB5D2F /* TableViewCell.xib in Resources */,
+				0CAE6C461F96644C00DB5D2F /* RecipieWebViewController.xib in Resources */,
 				0CB0098B1F95369400DBA8C2 /* Main.storyboard in Resources */,
+				0CC149361F9D2A35006853C8 /* Assets.xcassets in Resources */,
 				0CD53B6E1F8F5C3F00E18CFD /* LaunchScreen.storyboard in Resources */,
-				0CD53B6B1F8F5C3F00E18CFD /* Assets.xcassets in Resources */,
 				0CC39E341F92AFCA00E916BD /* SearchViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -422,14 +475,19 @@
 			files = (
 				0CB804971F953C1900AA90E6 /* ListOfRecipies.m in Sources */,
 				0CAE6C141F963D3C00DB5D2F /* TableViewCell.m in Sources */,
+				0CFAA2671F9A5957008D67C9 /* UITextField+textDesign.m in Sources */,
 				0CC39E371F92AFF800E916BD /* SearchView.m in Sources */,
 				0CD53B7C1F8F5D3400E18CFD /* AppDelegate.m in Sources */,
 				0CC39E331F92AFCA00E916BD /* SearchViewController.m in Sources */,
+				0CFAA2641F9A5135008D67C9 /* UIButton+buttonDesign.m in Sources */,
+				0CAE6C451F96644C00DB5D2F /* RecipieWebViewController.m in Sources */,
 				0CC39E551F92B55700E916BD /* SearchApiCall.m in Sources */,
 				0CB009871F95323B00DBA8C2 /* SearchResultViewController.m in Sources */,
+				0CFAA26D1F9A5E86008D67C9 /* UIImageView+Helpers.m in Sources */,
 				0CD53B601F8F5C3F00E18CFD /* main.m in Sources */,
 				0CB8049D1F95519300AA90E6 /* SearchResultView.m in Sources */,
 				0CC39E581F92BB4700E916BD /* SearchApiHandler.m in Sources */,
+				0CAE6C191F96498D00DB5D2F /* RecipieApiCall.m in Sources */,
 				0CB8049A1F953C3700AA90E6 /* Recipie.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -551,9 +609,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = LMP3TEWDKM;
 				INFOPLIST_FILE = Foodicted/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.alee.Foodicted;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aleeeeee.Foodicted;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -564,9 +624,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = LMP3TEWDKM;
 				INFOPLIST_FILE = Foodicted/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.alee.Foodicted;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aleeeeee.Foodicted;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
