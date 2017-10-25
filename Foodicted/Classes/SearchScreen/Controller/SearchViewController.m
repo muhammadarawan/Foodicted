@@ -29,6 +29,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+ 
     _searchHandlerObj=[SearchApiHandler alloc];
 self.searchView.searchTextField.delegate = self;
     [self setCallForResponce];

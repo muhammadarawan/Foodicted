@@ -71,6 +71,8 @@
     RecipieWebViewController *recipieController=[[RecipieWebViewController alloc] init];
     Recipie *r=(Recipie*) [_listOfRecipies.recipiesListArray objectAtIndex:indexPath.row];
     recipieController.recipieURL=r.source_url;
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+
     [self.navigationController pushViewController:recipieController animated:YES];
 
 }
@@ -83,5 +85,6 @@
 
 -(void)viewDidAppear:(BOOL)animated{
     self.navigationController.navigationBar.hidden=NO;
+
 }
 @end
